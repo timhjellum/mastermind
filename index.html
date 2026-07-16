@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTERMIND</title>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <header>
+            <div class="case-id">
+                <span>CASE FILE // MM-2601</span>
+                <span id="clockLine">STATUS: ACTIVE</span>
+            </div>
+            <h1>MASTER<span>MIND</span></h1>
+            <div class="subtitle">The Codemaker has sealed a 4-peg sequence. Break it before you run out of attempts.</div>
+        </header>
+
+        <div class="status">
+            <div>ATTEMPT <b id="currentAttempt">1</b> / <span id="maxAttempts">10</span></div>
+            <div id="attemptsLeft">9 REMAINING</div>
+        </div>
+
+        <div class="board" id="board"></div>
+
+        <div class="banner" id="banner">
+            <h2 id="bannerTitle"></h2>
+            <div class="reveal" id="bannerReveal"></div>
+            <p id="bannerSub"></p>
+        </div>
+
+        <div class="controls">
+            <div class="palette-label">Select a peg</div>
+            <div class="palette" id="palette"></div>
+
+            <div class="btn-row">
+                <button class="action" id="submitBtn" disabled>Lock In Guess</button>
+                <button class="action" id="clearBtn">Clear Row</button>
+                <button class="action" id="newGameBtn">New Case</button>
+            </div>
+
+            <div class="legend">
+                <div class="legend-item"><span class="pin black"></span> right color, right slot</div>
+                <div class="legend-item"><span class="pin white"></span> right color, wrong slot</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
