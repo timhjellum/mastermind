@@ -1,0 +1,38 @@
+:root {
+	--xs: green;
+	--s: blue;
+	--output-border-size: 3px;
+	--out-of-bounds: red;
+	--element-border-size: 3px;
+}
+@media (min-width: 0) {
+	.wrap {
+		border: var(--output-border-size) solid var(--out-of-bounds);
+	}
+	@media (orientation: landscape) {
+		.wrap {
+			border: var(--output-border-size) dashed var(--out-of-bounds);
+		}
+	}
+}
+@media (min-width: 320px) {
+	.wrap {
+		border: var(--element-border-size) solid var(--xs);
+	}
+	@media (orientation: landscape) {
+		.wrap {
+			border: var(--output-border-size) dashed var(--xs);
+		}
+	}
+}
+@media (min-width: 769px) {
+	.wrap {
+		border: var(--output-border-size) solid var(--s);
+	}
+
+	@media (orientation: landscape) {
+		.wrap {
+			border: var(--output-border-size) dashed var(--s);
+		}
+	}
+}
