@@ -7,7 +7,7 @@ import './images/android-chrome-192x192.png';
 import './images/favicon-32x32.png';
 import './images/favicon.ico';
 import './images/favicon-16x16.png';
-import './images/cover.png';
+//import './images/cover.png';
 import './site.webmanifest';
 import "./scripts/scripts.js";
 console.clear();
